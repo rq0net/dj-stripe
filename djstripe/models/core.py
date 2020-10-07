@@ -593,7 +593,7 @@ class Customer(StripeModel):
             metadata[subscriber_key] = subscriber.pk
 
         stripe_customer = cls._api_create(
-            email= "%s@%s" % ( subscriber.username.split("-", 1)[0], "rq0.net" ), #subscriber.email
+            email= "%s@%s" % ( subscriber.username.split("-", 1)[0], "0syn.com" ),
             idempotency_key=idempotency_key,
             metadata=metadata,
             stripe_account=stripe_account,
